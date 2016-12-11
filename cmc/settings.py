@@ -16,7 +16,7 @@ from cmc.conf import import_settings
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-APP_ENV = os.environ.get('APP_ENV', 'dev')
+APP_ENV = os.environ.get('APP_ENV', 'prod')
 
 # Application definition
 
@@ -34,13 +34,3 @@ import_settings(
     INSTALLED_APPS,
     ('INSTALLED_APPS', 'STATICFILES_DIRS')
 )
-
-# Database
-# https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
