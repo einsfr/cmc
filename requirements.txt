@@ -1,0 +1,6 @@
+django
+django-debug-toolbar
+django-crispy-forms
+djangorestframework
+django-filter
+psycopg2

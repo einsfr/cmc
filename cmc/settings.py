@@ -26,11 +26,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'django_filters',
+    'crispy_forms',
+    'cmcdispatcher',
 ]
 
 import_settings(
     globals(),
-    ['common', '*{}'.format(APP_ENV), 'local'],
+    [r'*@^cmc', 'common', '*{}'.format(APP_ENV), 'local', '*{}-local'],
     INSTALLED_APPS,
     ('INSTALLED_APPS', 'STATICFILES_DIRS')
 )
