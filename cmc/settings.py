@@ -36,5 +36,5 @@ import_settings(
     globals(),
     [r'*@^cmc', 'common', '*{}'.format(APP_ENV), 'local', '*{}-local'],
     INSTALLED_APPS,
-    ('INSTALLED_APPS', 'STATICFILES_DIRS')
+    ('INSTALLED_APPS', 'REST_FRAMEWORK')
 )

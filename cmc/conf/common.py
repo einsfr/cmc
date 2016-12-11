@@ -4,16 +4,6 @@ from django.utils.translation import ugettext_lazy as _
 
 from cmc.settings import BASE_DIR
 
-MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
-
 ROOT_URLCONF = 'cmc.urls'
 
 TEMPLATES = [
@@ -76,3 +66,7 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ('rest_framework.filters.DjangoFilterBackend', ),
     'PAGE_SIZE': 20,
 }
+
+INTERNAL_IPS = [
+    '127.0.0.1'
+]
