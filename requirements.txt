@@ -4,4 +4,3 @@ django-crispy-forms
 djangorestframework
 django-filter
 psycopg2
-celery
